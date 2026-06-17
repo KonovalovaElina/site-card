@@ -10,6 +10,16 @@
   background-color: rgba(208, 213, 186);
 }
 
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: rgb(113, 122, 72);
+}
+
 .logo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;

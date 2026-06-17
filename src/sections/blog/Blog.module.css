@@ -1,0 +1,9 @@
+.post {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

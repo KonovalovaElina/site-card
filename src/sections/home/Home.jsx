@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Layout from '../../layout/Layout';
-import styles from './Home.module.css';
 import Modal from '../../components/modal/Modal';
+import styles from './Home.module.css';
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState (false);
