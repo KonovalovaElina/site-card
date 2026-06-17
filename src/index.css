@@ -1,0 +1,12 @@
+body {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --main-background: #fff;
+  color: var(--text);
+  background-color: var(--main-background);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
