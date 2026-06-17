@@ -1,7 +1,7 @@
 body {
-  --text: #6b6375;
+  --text: rgb(113, 122, 72);
   --text-h: #08060d;
-  --main-background: #fff;
+  --main-background: rgba(162, 172, 117, 0.5);
   color: var(--text);
   background-color: var(--main-background);
   margin-left: 5%;

@@ -4,12 +4,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(208, 213, 186);
 }
 
 .logo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .menu {
@@ -20,7 +24,7 @@
 }
 
 .menu a {
-  color: #6b6375;
+  color: rgb(111, 127, 62);
   font-size: 18px;
   font-weight: 500;
   margin-right: 3%;
@@ -36,7 +40,7 @@
 }
 
 .contactButton {
-  background-color: #b3afb8;
+  background-color: rgb(111, 127, 62);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -44,20 +48,22 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
 .contactButton:hover {
-  background-color: #928f96;
+  background-color: rgb(79, 90, 44);
 }
 
 .contactButton::before {
   content: '';
   position: absolute;
-  height: 300px;
+  height: 180px;
   width: 15px;
   background: #ffffffbd;
   filter: blur(2px);
-  transition: 2s;
+  transition: 1.5s;
   transform: rotate(-20deg) translateX(-50px) translateY(-200px);
 }
 

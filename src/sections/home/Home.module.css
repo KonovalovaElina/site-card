@@ -1,0 +1,85 @@
+.homeBlock {
+  height: 530px;
+  display: flex;
+  place-items: center;
+  position: relative;
+}
+
+.homeBlock::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: rgb(113, 122, 72);
+}
+
+.homeBlock::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: rgb(113, 122, 72);
+}
+
+.title {
+  font-size: 60px;
+}
+
+.description {
+  font-size: 35px;
+  font-weight: 450;
+}
+
+.textBlock {
+  align-content: center;
+  width: 65%;
+}
+
+.photoBlock {
+  width: 35%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.photo {
+  width: auto;
+  height: 100%;
+  align-content: center;
+}
+
+.contactButton {
+  position: relative;
+  background-color: rgb(111, 127, 62);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  width: 200px;
+  display: inline-block;
+}
+
+.contactButton:hover {
+  background-color: rgb(79, 90, 44);
+}
+
+.contactButton::before {
+  content: '';
+  position: absolute;
+  height: 300px;
+  width: 15px;
+  background: #ffffffbd;
+  filter: blur(2px);
+  transition: 1s;
+  transform: rotate(-20deg) translateX(-50px) translateY(-120px);
+}
+
+.contactButton:hover::before {
+  transform: rotate(-20deg) translateX(200px);
+}
