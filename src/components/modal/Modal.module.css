@@ -103,3 +103,75 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
+
+.loading,
+.error {
+  text-align: center;
+  padding: 1rem;
+}
+
+.error {
+  color: #c0392b;
+}
+
+.author {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.modalContent h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .modalOverlay {
+    padding: 1rem;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .modalContent {
+    max-width: 100%;
+    width: 100%;
+    max-height: none;
+    margin: auto 0;
+    padding: 2.5rem 1rem 1.5rem;
+    border-radius: 12px;
+    gap: 1rem;
+  }
+
+  .modalCloseButton {
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modalTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  .modalContent h4 {
+    font-size: 1rem;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .message {
+    width: 100%;
+    min-height: 80px;
+  }
+
+  .submitButton {
+    margin-top: 0.5rem;
+    padding: 12px 16px;
+  }
+}

@@ -71,8 +71,8 @@
   position: absolute;
   height: 180px;
   width: 15px;
-  background: #ffffffbd;
-  filter: blur(2px);
+  background: rgb(190, 214, 123);
+  filter: blur(10px);
   transition: 1.5s;
   transform: rotate(-20deg) translateX(-50px) translateY(-200px);
 }
