@@ -1,13 +1,15 @@
 .header {
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(208, 213, 186);
+  background-color: var(--header-background);
+  transition: background-color 0.3s ease;
 }
 
 .header::after {
@@ -17,13 +19,16 @@
   left: 0;
   width: 50%;
   height: 2px;
-  background: rgb(113, 122, 72);
+  background: var(--header-accent);
+  transition: background 0.3s ease;
 }
 
 .logo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 500;
+  color: var(--header-accent);
+  transition: color 0.3s ease;
 }
 
 .menu {
@@ -34,7 +39,7 @@
 }
 
 .menu a {
-  color: rgb(111, 127, 62);
+  color: var(--header-link);
   font-size: 18px;
   font-weight: 500;
   margin-right: 3%;
@@ -44,14 +49,30 @@
 }
 
 .menu a:hover {
-  color: #040f18;
-  filter: drop-shadow(0px 0px 50px #040f18);
+  color: var(--header-link-hover);
+  filter: drop-shadow(0px 0px 50px var(--header-link-hover));
   text-decoration: none;
 }
 
+.themeButton {
+  background-color: transparent;
+  color: var(--header-link);
+  border: 1px solid var(--header-link);
+  padding: 0.4375rem 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.themeButton:hover {
+  background-color: var(--header-button-bg);
+  color: var(--header-button-text);
+}
+
 .contactButton {
-  background-color: rgb(111, 127, 62);
-  color: white;
+  background-color: var(--header-button-bg);
+  color: var(--header-button-text);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -63,7 +84,7 @@
 }
 
 .contactButton:hover {
-  background-color: rgb(79, 90, 44);
+  background-color: var(--header-button-hover);
 }
 
 .contactButton::before {
@@ -71,7 +92,7 @@
   position: absolute;
   height: 180px;
   width: 15px;
-  background: rgb(190, 214, 123);
+  background: var(--header-button-shine);
   filter: blur(10px);
   transition: 1.5s;
   transform: rotate(-20deg) translateX(-50px) translateY(-200px);

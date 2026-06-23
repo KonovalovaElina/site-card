@@ -1,11 +1,10 @@
+:root {
+  --page-inline: 5%;
+}
+
 body {
-  --text: rgb(113, 122, 72);
-  --text-h: #08060d;
-  --main-background: rgba(162, 172, 117, 0.5);
-  color: var(--text);
-  background-color: var(--main-background);
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: var(--page-inline);
+  margin-right: var(--page-inline);
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Times New Roman', Times, serif;

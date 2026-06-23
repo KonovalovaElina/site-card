@@ -1,0 +1,33 @@
+body.light {
+  --text: rgb(113, 122, 72);
+  --text-h: #08060d;
+  --main-background: rgba(162, 172, 117, 0.5);
+  --header-background: rgba(208, 213, 186);
+  --header-accent: rgb(113, 122, 72);
+  --header-link: rgb(111, 127, 62);
+  --header-link-hover: #040f18;
+  --header-button-bg: rgb(111, 127, 62);
+  --header-button-hover: rgb(79, 90, 44);
+  --header-button-shine: rgb(190, 214, 123);
+  --header-button-text: white;
+  color: var(--text);
+  background-color: var(--main-background);
+  min-height: 100vh;
+}
+
+body.dark {
+  --text: rgb(200, 200, 180);
+  --text-h: #f0f0e8;
+  --main-background: rgba(25, 28, 20, 0.95);
+  --header-background: rgba(45, 50, 35, 0.98);
+  --header-accent: rgb(190, 200, 140);
+  --header-link: rgb(190, 200, 140);
+  --header-link-hover: #f0f0e8;
+  --header-button-bg: rgb(120, 130, 80);
+  --header-button-hover: rgb(90, 100, 60);
+  --header-button-shine: rgb(160, 180, 100);
+  --header-button-text: #f0f0e8;
+  color: var(--text);
+  background-color: var(--main-background);
+  min-height: 100vh;
+}

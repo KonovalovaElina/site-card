@@ -19,9 +19,9 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: rgb(111, 127, 62);
+  background-color: var(--header-link);
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .burgerButtonOpen .burgerLine:nth-child(1) {
@@ -45,14 +45,15 @@
   gap: 1rem;
   min-width: 200px;
   padding: 1rem;
-  background-color: rgba(208, 213, 186, 0.98);
+  background-color: var(--header-background);
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1001;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown a {
-  color: rgb(111, 127, 62);
+  color: var(--header-link);
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -60,12 +61,27 @@
 }
 
 .dropdown a:hover {
-  color: #040f18;
+  color: var(--header-link-hover);
+}
+
+.themeButton {
+  background-color: transparent;
+  color: var(--header-link);
+  border: 1px solid var(--header-link);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.themeButton:hover {
+  background-color: var(--header-button-bg);
+  color: var(--header-button-text);
 }
 
 .contactButton {
-  background-color: rgb(111, 127, 62);
-  color: white;
+  background-color: var(--header-button-bg);
+  color: var(--header-button-text);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -74,5 +90,5 @@
 }
 
 .contactButton:hover {
-  background-color: rgb(79, 90, 44);
+  background-color: var(--header-button-hover);
 }
